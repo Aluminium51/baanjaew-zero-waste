@@ -34,9 +34,9 @@ export default function Home() {
           </div>
           
           {/* Buttons */}
-          <div className="space-y-4">
+          <div className="space-y-4 flex flex-col">
             <Link href="/game">
-              <button className="group relative w-full max-w-sm mx-auto bg-white text-blue-700 font-semibold py-4 px-8 rounded-2xl text-lg transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 border border-white/20 backdrop-blur-sm flex items-center justify-center gap-3">
+              <button className="group relative w-full max-w-sm mx-auto bg-white text-blue-700 font-semibold py-4 px-8 rounded-2xl text-lg transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 border border-white/20 backdrop-blur-sm flex items-center justify-center">
                 <span className="text-2xl group-hover:scale-110 transition-transform duration-300">🎮</span>
                 <span>Start Playing</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-white rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -45,14 +45,14 @@ export default function Home() {
             
             <button
               onClick={() => setShowHowToPlay(true)}
-              className="group relative w-full max-w-sm mx-auto bg-white/10 backdrop-blur-sm text-white font-semibold py-4 px-8 rounded-2xl text-lg transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 border border-white/20 flex items-center justify-center gap-3"
+              className="group relative w-full max-w-sm mx-auto bg-white/10 backdrop-blur-sm text-white font-semibold py-4 px-8 rounded-2xl text-lg transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 border border-white/20 flex items-center justify-center"
             >
               <span className="text-2xl group-hover:scale-110 transition-transform duration-300">📖</span>
               <span>How to Play</span>
             </button>
             
             <Link href="/learn">
-              <button className="group relative w-full max-w-sm mx-auto bg-white/10 backdrop-blur-sm text-white font-semibold py-4 px-8 rounded-2xl text-lg transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 border border-white/20 flex items-center justify-center gap-3">
+              <button className="group relative w-full max-w-sm mx-auto bg-white/10 backdrop-blur-sm text-white font-semibold py-4 px-8 rounded-2xl text-lg transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 border border-white/20 flex items-center justify-center">
                 <span className="text-2xl group-hover:scale-110 transition-transform duration-300">📚</span>
                 <span>Learn Waste Types</span>
               </button>

@@ -1,8 +1,15 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { Space_Mono } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+
+const spaceMono = Space_Mono({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-space-mono',
+});
 
 export const metadata: Metadata = {
   title: 'Waste Sorting Game',
@@ -15,8 +22,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="th" className={spaceMono.variable}>
+      <body className="font-space-mono">
+        {children}
+      </body>
     </html>
   )
 }
